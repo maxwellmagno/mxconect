@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MxConect</title>
+    <style>
+        /* Reset e configurações básicas */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Espaçamento nas laterais */
+            box-sizing: border-box;
+        }
+
+        /* Estilo da imagem com responsividade */
+        .bio-image {
+            width: 100%;
+            max-width: 960px;
+            height: auto;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* Imagem para desktop */
+        .desktop {
+            display: none;
+        }
+
+        /* Imagem para mobile */
+        .mobile {
+            display: none;
+        }
+
+        /* Exibe a imagem correta com base no tamanho da tela */
+        @media (min-width: 768px) {
+            .desktop {
+                display: block;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Link clicável na imagem -->
+    <a href="https://mediafiles.botpress.cloud/7b11fb68-1dad-4afe-ac75-65c0417c2f7e/webchat/bot.html" target="_blank">
+        <!-- Imagem para desktop -->
+        <img src="https://i.imgur.com/rAcu6vJ.png" alt="Imagem para desktop" class="bio-image desktop">
+        <!-- Imagem para mobile -->
+        <img src="https://i.imgur.com/NELFN7A.png" alt="Imagem para mobile" class="bio-image mobile">
+    </a>
+</body>
+</html>
